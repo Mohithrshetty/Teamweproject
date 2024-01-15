@@ -15,9 +15,7 @@ const Donate = require("./models/donate");
 app.use(express.json());
 app.use(cors());
 
-// app.post("/signup", (req, res) => {
-//   res.render("signup.html");
-// });
+
 
 app.get("/", (req, res) => {
   res.render("index.ejs");
@@ -35,15 +33,20 @@ app.get("/blog", (req, res) => {
   res.render("blog.ejs");
 });
 
-app.get("/login", (req, res) => {
-  res.render("login.ejs");
-});
 
 app.get("/signup", (req, res) => {
   res.render("signup.ejs");
 });
 
+app.get("/login", (req, res) => {
+  res.render("login.ejs");
+});
 
+
+
+app.get("/donate", (req, res) => {
+  res.render("donate.ejs");
+});
 
 
 app.get("/login-success", (req, res) => {
@@ -57,7 +60,7 @@ app.get("/login-success", (req, res) => {
 //   res.render("admin.ejs", { data: donations });
 // });
 
-app.use("/user", require("./routes/user.route.js"));
+app.use("/user", require("./routes/user.route"));
 app.use("/donate", require("./routes/donate.route"));
 
 app.listen(PORT, () => {
