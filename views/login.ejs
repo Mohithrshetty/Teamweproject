@@ -44,7 +44,7 @@
     
             <h1>LOGIN HERE</h1>
     
-            <form action="/login" method="post" id="login">
+            <form action="#" method="post" id="login">
                 <div class="input-box">
                     <input type="email" placeholder="Email"  id="login-email" required>
                     <i class="fa fa-envelope"></i>
@@ -55,10 +55,12 @@
                     <i class="fa fa-lock"></i>
                 </div>
                 
-          <a href="/login-success"><button class="btn" onclick="handleLogin()">LOGIN</button></a>
+          <!-- <a href="/login-success"><button class="btn" onclick="handleLogin()">LOGIN</button></a> -->
              
-            
-    
+            <div class="input-box">
+          <input type="submit" value="LOGIN" class="btn" onclick="handleLogin()" />
+
+            </div>
                 <div class="links">
                     
                     <a href="/signup">You don't have an account?</a>
