@@ -1,8 +1,7 @@
 const router = require("express").Router();
 const User = require("../models/user");
 const bcrypt = require("bcryptjs");
-
-
+// var swal = require("sweetalert2")
 
 router.post("/signup", async (req, res) => {
   try {
@@ -13,6 +12,7 @@ router.post("/signup", async (req, res) => {
     if (isEmailExist) {
       return res.status(409).send({
         message: "Email already registered",
+        
       });
     }
 

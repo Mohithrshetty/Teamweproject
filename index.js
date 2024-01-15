@@ -33,6 +33,9 @@ app.get("/blog", (req, res) => {
   res.render("blog.ejs");
 });
 
+app.get("/gallery", (req, res) => {
+  res.render("gallery.ejs");
+});
 
 app.get("/signup", (req, res) => {
   res.render("signup.ejs");
@@ -41,6 +44,8 @@ app.get("/signup", (req, res) => {
 app.get("/login", (req, res) => {
   res.render("login.ejs");
 });
+
+
 
 
 

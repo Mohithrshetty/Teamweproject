@@ -48,6 +48,9 @@ const handleLogin = async () => {
     });
     const parsedData = await response.json();
     alert(parsedData.message);
+    setTimeout(() => {
+      window.location.href = "/login-success"
+    }, 1000)
   } catch (error) {
     alert(error);
   }
