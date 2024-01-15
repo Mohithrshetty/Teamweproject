@@ -55,13 +55,9 @@ app.get("/login-success", (req, res) => {
 
 
 
-// app.get("/admin", async (req, res) => {
-//   const donations = await Donate.find();
-//   res.render("admin.ejs", { data: donations });
-// });
 
 app.use("/user", require("./routes/user.route"));
-app.use("/donate", require("./routes/donate.route"));
+// app.use("/donate", require("./routes/donate.route"));
 
 app.listen(PORT, () => {
   console.log(`Server is up and running on localhost:${PORT}`);

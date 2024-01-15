@@ -21,6 +21,9 @@ const handleSignup = async () => {
     });
     const parsedData = await response.json();
     alert(parsedData.message);
+    setTimeout(() => {
+      window.location.href = "/login"
+    }, 1000)
   } catch (error) {
     alert(error);
   }
