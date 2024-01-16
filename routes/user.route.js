@@ -36,6 +36,7 @@ router.post("/signup", async (req, res) => {
     res.send({
       message: "user created",
     });
+
   } catch (error) {
   
     res.status(500).send(error);
