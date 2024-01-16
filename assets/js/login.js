@@ -59,12 +59,14 @@ const handleSignup = async () => {
   const name = document.getElementById("name").value;
   const email = document.getElementById("signup-email").value;
   const password = document.getElementById("signup-password").value;
+  const city = document.getElementById("city").value;
   const phoneNumber = document.getElementById("phoneNumber").value;
 
   const data = {
     name,
     email,
     password,
+    city,
     phoneNumber,
   };
 
