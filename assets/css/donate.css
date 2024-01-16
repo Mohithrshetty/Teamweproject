@@ -30,3 +30,6 @@ body {
 .donate h2{
     color: rgb(1, 90, 1);
 }
+@media (max-width:400px) {
+    
+}
