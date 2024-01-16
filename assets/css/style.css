@@ -358,7 +358,10 @@ header {
     width: 40%;
     height: 85%;
 }
+
       }
+
+
 
 .scroll-to-fixed-fixed {
   background-color: #FFF;
@@ -571,6 +574,16 @@ header {
   .mission-vision .mv-det {
     margin: auto; }
 
+    @media (max-width:400px) {
+     .container #ab1 img {
+     height: 180px;
+     width: 800px;
+   }
+   .container #ab2 img {
+    height: 180px;
+    width: 800px;
+  }
+         }
 /* ===================================== Charity Number CSS ================================== */
 .doctor-message {
   background-image: url("../images/slider/slider-2.jpg");
