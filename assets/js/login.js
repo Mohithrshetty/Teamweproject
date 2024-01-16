@@ -19,13 +19,20 @@ const handleSignup = async () => {
       },
       body: JSON.stringify(data),
     });
-    const parsedData = await response.json();
-    alert(parsedData.message);
-    setTimeout(() => {
-      window.location.href = "/login"
-    }, 1000)
+
+    if (response.ok) {
+      const parsedData = await response.json();
+      alert(parsedData.message);
+      setTimeout(() => {
+        window.location.href = "/login";
+      }, 1000);
+    } else {
+      // Handle error cases
+      const errorData = await response.json();
+      throw new Error(errorData.message);
+    }
   } catch (error) {
-    alert(error);
+    alert(error.message);
   }
 };
 
@@ -46,12 +53,19 @@ const handleLogin = async () => {
       },
       body: JSON.stringify(data),
     });
-    const parsedData = await response.json();
-    alert(parsedData.message);
-    setTimeout(() => {
-      window.location.href = "/login-success"
-    }, 1000)
+
+    if (response.ok) {
+      const parsedData = await response.json();
+      alert(parsedData.message);
+      setTimeout(() => {
+        window.location.href = "/login-success";
+      }, 1000);
+    } else {
+      // Handle error cases
+      const errorData = await response.json();
+      throw new Error(errorData.message);
+    }
   } catch (error) {
-    alert(error);
+    alert(error.message);
   }
 };

@@ -274,7 +274,7 @@ a {
 .login {
     position: relative;
     width: 350px;
-    padding: 30px;
+    padding: 20px;
     height: fit-content;
     background-color: rgba(255, 255, 255, 0.76);
     border: 1px solid rgba(14, 12, 12, 0.5);
@@ -283,6 +283,7 @@ a {
     backdrop-filter: blur(100px);
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2),
     -10px -10px 40px rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
 }
 
 @media (max-width:400px) {
@@ -294,7 +295,7 @@ a {
 .login h1 {
     font-size: 1.8rem;
     color: #0f0f0f;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     margin-top: 0;
     text-align: center;
 }
@@ -320,7 +321,7 @@ a {
     border-radius: 10px;
     color: #0f0e0e;
     background-color: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(7, 6, 6, 0.548);
 }
 
 .login form .input-box input::placeholder {
