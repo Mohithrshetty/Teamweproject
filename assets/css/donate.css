@@ -30,3 +30,18 @@ body {
 .donate h2{
     color: rgb(1, 90, 1);
 }
+@media (max-width:400px) {
+    .donate{
+        width: 250px;
+        background-color: white;
+        border-radius: 6px;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+    }  
+    .donate img{
+        width: 100px;
+        margin-top: -50px;
+        border-radius: 50%;
+    } 
+}
