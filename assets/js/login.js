@@ -81,7 +81,9 @@ const handleSignup = async () => {
 
     if (response.ok) {
       const parsedData = await response.json();
-      alert(parsedData.message);
+
+      sweetAlert(parsedData.message,"","success");
+
       setTimeout(() => {
         window.location.href = "/login";
       }, 1000);
@@ -91,7 +93,7 @@ const handleSignup = async () => {
       throw new Error(errorData.message);
     }
   } catch (error) {
-    alert(error.message);
+    sweetAlert(error.message,"","error");
   }
 };
 
@@ -115,7 +117,7 @@ const handleLogin = async () => {
 
     if (response.ok) {
       const parsedData = await response.json();
-      alert(parsedData.message);
+      sweetAlert(parsedData.message,"","success");
       setTimeout(() => {
         window.location.href = "/login-success";
       }, 1000);
@@ -125,6 +127,6 @@ const handleLogin = async () => {
       throw new Error(errorData.message);
     }
   } catch (error) {
-    alert(error.message);
+    sweetAlert(error.message,"","error");
   }
 };
